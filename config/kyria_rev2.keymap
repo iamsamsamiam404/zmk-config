@@ -47,7 +47,7 @@
                         bindings = <
 	&none   &none &kp MINUS &kp AMPS &kp F2  &kp EXCL                                   &none &kp PG_UP  &kp LS(MINUS)  &none &none &none
 	&none   &kp AT &kp STAR &kp HASH &kp PLUS &kp GRAVE                              &kp TILDE &kp HOME  &none &kp LC(LG(RIGHT)) &kp PIPE &none
-	&none  &none &none &none &none &kp DLLR &kp CARET &kp F3         &none &none &none &KP PG_DN &none &kp LC(LG(LEFT)) &kp BSLH &none
+	&none  &none &none &none &none &kp DLLR &kp CARET &kp F3         &none &none &none &kp PG_DN &none &kp LC(LG(LEFT)) &kp BSLH &none
 	                      &none &none &none &mo LTHUMB &none         &mo RSPECIAL  &none  &none &none &none
 			>;
 
