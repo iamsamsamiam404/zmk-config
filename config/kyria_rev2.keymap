@@ -10,6 +10,7 @@
 #define LTHUMB 1
 #define RSPECIAL 2
 #define NUMBERS 3
+#define NAVIGATE 4
 
 / {
 	keymap {
@@ -34,9 +35,9 @@
 		lthumb {
 		
                         bindings = <
-	&none   &none &none &kp ENTER &none  &none                                          &none &none  &none &none &none &none
-	&none   &kp LA(TAB) &none &kp LC(TAB) &none &none                                               &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-	&none  &none &none &none &none &none &none &none         &none &none &none &kp DEL  &kp BSPC &none &none &none
+	&none   &none &none &kp ENTER &none  &none                                      &kp C_VOL_UP &none  &none &kp PSCRN &none &none
+	&none   &kp LA(TAB) &kp TAB &kp LC(TAB) &none &none                               &kp MUTE &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
+	&none  &none &none &none &none &none &none &none         &none &none &kp C_VOL_DN &kp DEL  &kp BSPC &none &none &none
 	                 &none &none &none &mo LTHUMB &none      &none  &none  &none &kp LPAR &kp RPAR
 			>;
 
@@ -62,6 +63,18 @@
 	&kp LCTRL  &kp STAR &kp N4 &kp N5 &kp N6 &kp MINUS                                 &none &none &none &none &none &none
 	&kp LSHFT  &kp BSPC &kp N1 &kp N2 &kp N3 &none &none &none         &none &none &none &none &none &none &none &none
 	                   &none &none &kp DOT &kp N0 &none         &none  &none &mo NUMBERS &none &none
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+		
+		NAVIGATION {
+		
+                        bindings = <
+	&none  &none &none &none &none &none                                 &none &none &none &none &none &none
+	&none  &none &none &none &none &none                                 &none &none &none &none &none &none
+	&none  &none &none &none &none &none &none &none         &none &none &none &none &none &none &none &none
+	                   &none &none &none &none &none         &none  &none  &none &none &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
