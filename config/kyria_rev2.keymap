@@ -26,7 +26,7 @@
 // |  GUI  |  Z  |  X  |  M   |  C   |  V   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  K   |  L    |  ,    |  .   |   /   | GUI |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp ESC   &kp Q &kp D &kp R &kp W &kp B                                                &kp J &kp F  &kp U     &kp P   &kp SEMI    &tog QWERTY
+	&kp ESC   &kp Q &kp D &kp R &kp W &kp B                                                &kp J &kp F  &kp U     &kp P   &kp SEMI    &none
 	&kp LALT   &kp A &kp S &kp H &kp T &kp G                                                &kp Y &kp N  &kp E     &kp O   &kp I &kp SQT
 	&kp LGUI  &kp Z &kp X &kp M &kp C &kp V &kp LSHFT &kp LSHFT        &kp RCTRL &mo NAVIGATE &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RGUI
 	                 &kp LGUI &kp TAB &kp LSHFT &mo LTHUMB &kp ESC      &mo RSPECIAL  &kp SPACE  &mo NUMBERS &kp LBKT &kp RBKT
@@ -50,7 +50,7 @@
 		RSPECIAL {
 		
                         bindings = <
-	&none   &none &kp MINUS &kp AMPS &kp F2  &kp EXCL                     &none &kp PG_UP  &kp LS(MINUS)  &none &none &none
+	&none   &none &kp MINUS &kp AMPS &kp F2  &kp EXCL                     &none &kp PG_UP  &kp LS(MINUS)  &none &none &tog QWERTY
 	&none   &kp AT &kp STAR &kp HASH &kp PLUS &kp GRAVE                   &kp TILDE &kp HOME  &kp EQUAL &kp LC(LG(RIGHT)) &kp PIPE &none
 	&none &none &none &kp DLLR &kp CARET &kp F3 &none &none        &none &none &tog FUNCTION &kp PG_DN &none &kp LC(LG(LEFT)) &kp BSLH &none
 	                      &none &none &none &mo LTHUMB &none       &mo RSPECIAL  &none  &none &none &none
@@ -63,7 +63,7 @@
 		
                         bindings = <
 	&none  &kp FSLH &kp N7 &kp N8 &kp N9 &kp PLUS                                 &bt BT_CLR &none &none &none &none &none
-	&kp LCTRL  &kp STAR &kp N4 &kp N5 &kp N6 &kp MINUS                                 &none &bt BT_NXT &bt BT_PRV &none &none &none
+	&kp LCTRL  &kp STAR &kp N4 &kp N5 &kp N6 &kp MINUS                                 &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
 	&kp LSHFT  &kp BSPC &kp N1 &kp N2 &kp N3 &none &none &none         &none &none &none &none &none &none &none &none
 	                   &none &none &kp DOT &kp N0 &none         &none  &none &mo NUMBERS &none &none
 			>;
