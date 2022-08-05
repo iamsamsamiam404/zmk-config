@@ -63,7 +63,7 @@
 		
                         bindings = <
 	&none  &kp FSLH &kp N7 &kp N8 &kp N9 &kp PLUS                                 &bt BT_CLR &none &none &none &none &none
-	&kp LCTRL  &kp STAR &kp N4 &kp N5 &kp N6 &kp MINUS                                 &none &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
+	&kp LCTRL  &kp STAR &kp N4 &kp N5 &kp N6 &kp MINUS                                 &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 	&kp LSHFT  &kp BSPC &kp N1 &kp N2 &kp N3 &none &none &none         &none &none &none &none &none &none &none &none
 	                   &none &none &kp DOT &kp N0 &none         &none  &none &mo NUMBERS &none &none
 			>;
