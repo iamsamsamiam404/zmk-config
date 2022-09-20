@@ -40,7 +40,7 @@
                         bindings = <
 	&kp ESC  &tog FUNCTION &kp CAPS &kp ENTER &none  &none                                      &kp C_VOL_UP &none  &none &kp PSCRN &none &none
 	&kp LALT &kp LA(TAB) &kp LCTRL &kp LC(TAB) &kp TAB &none                               &kp C_MUTE &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-	&kp LGUI  &none &none &none &none &none &none &none         &kp RCTRL &none &kp C_VOL_DN &kp DEL  &kp BSPC &none &none &kp RGUI
+	&kp LGUI  &none &none &none &none &none &none &none         &kp RCTRL &none &kp C_VOL_DN &kp DEL  &kp BSPC &kp DOT &none &kp RGUI
 	                 &none &kp TAB &kp LSHFT &mo LTHUMB &none      &none  &none  &none &kp LPAR &kp RPAR
 			>;
 
@@ -50,7 +50,7 @@
 		RSPECIAL {
 		
                         bindings = <
-	&kp ESC   &none &kp MINUS &kp AMPS &kp F2  &kp EXCL                                 &none &kp PG_UP  &kp LS(MINUS)  &none &none &tog QWERTY
+	&kp ESC   &none &kp MINUS &kp AMPS &kp F2  &kp EXCL                                 &none &kp PG_UP  &kp LS(MINUS)  &kp PERCENT &none &tog QWERTY
 	&kp LALT   &kp AT &kp STAR &kp HASH &kp PLUS &kp GRAVE                               &kp TILDE &kp HOME  &kp EQUAL &kp LC(LG(RIGHT)) &kp PIPE &none
 	&kp LGUI &none &none &kp DLLR &kp CARET &kp F3 &kp C_PWR &kp C_SLEEP     &kp RCTRL &none &tog FUNCTION &kp PG_DN &none &kp LC(LG(LEFT)) &kp BSLH &kp RGUI
 	                             &none &kp TAB &kp LSHFT &none &kp C_SLEEP      &mo RSPECIAL  &none  &none &none &none
